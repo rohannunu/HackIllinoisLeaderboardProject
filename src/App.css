@@ -36,3 +36,76 @@
     transform: rotate(360deg);
   }
 }
+
+#largeContainer {
+	/* width: 600px;
+	height: auto;
+  padding: 10px;
+  border: 5px solid rgb(218, 19, 19);
+  border-radius: 25px; */
+  margin: 0 auto;
+}
+
+#containerTop3 {
+	width: 600px;
+	height: auto;
+  padding: 10px;
+  border: 5px solid rgb(205, 218, 19);
+  border-radius: 25px;
+  margin: 0 auto;
+}
+
+#containerRemaining {
+	width: 400px;
+	height: auto;
+  padding: 10px;
+  border: 5px;
+  border-radius: 25px;
+  margin: 0 auto;
+}
+
+
+
+/*Source for CSS: https://stackoverflow.com/questions/47918195/creating-a-basic-html-javascript-leaderboard */
+.row {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #AFAFAF;
+}
+
+.index {
+	position: relative;
+	display: inline-block;
+	width: 25%;
+	line-height: 45px;
+}
+
+.discord {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	line-height: 45px;
+}
+
+.score {
+	position: relative;
+	display: inline-block;
+	width: 25%;
+}
+
+
+/*https://stackoverflow.com/questions/21051578/how-do-i-center-an-h1-in-the-body#:~:text=You%20can%20center%20it%20by%20setting%20the%20width.&text=text%2Dalign%3A%20center%20is%20best,H1%20(a%20block)%20element.*/
+h1 {
+  width:500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#gradient {
+  height: auto;
+  background-size: cover;
+  background-image: linear-gradient(to bottom right, rgb(132, 181, 238), rgb(196, 22, 219));
+}
