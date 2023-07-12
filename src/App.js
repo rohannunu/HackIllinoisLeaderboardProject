@@ -33,7 +33,7 @@ function App() {
 
   useEffect(() => {
     fetchUserData()
-  }, [])
+  })
 
   
 
@@ -46,11 +46,11 @@ function App() {
 
           <div id="containerTop3">
             {users.slice(0, 3).map((user, index) => (
-              <div class="column">
+              <div class="card-deck">
                 <div class="card" style={{ display: 'flex', alignItems: 'center' }}>
-                  <img class="card-img-top" src= {medal} height="200" alt="Card image" />
+                  <img class="card-img-top" src= {medal} height="200" alt="Medal" />
                   <div class="card-body">
-                    <h4 class="card-title">{index + 1}. {user.discord}</h4>
+                    <h4 class="card-title" style={{fontSize: "20;"}}>{index + 1}. {user.discord}</h4>
                     <h5 class="card-text" style={{textAlign: 'center'}}>{user.points}</h5>
                   </div>
                 </div>
@@ -61,13 +61,13 @@ function App() {
           <div id="containerRemaining">
             {users.slice(3).map((user, index) => (
             <div class="row">
-            <div class="card" style={{ width: "18rem;" }}>
-            <div class="card-body">
-              <h5 class="card-title">{index + 4}. {user.discord}</h5>
-              <p class="card-text">Points: {user.points}</p>
+              <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">{index + 4}. {user.discord}</h5>
+                <p class="card-text">Points: {user.points}</p>
+              </div>
             </div>
           </div>
-        </div>
         ))}
         </div>
       </div>

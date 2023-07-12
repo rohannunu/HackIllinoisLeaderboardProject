@@ -8,9 +8,9 @@
   display: block;
   width: 100%;
   height: 40px;
-  padding-left: 300px; /*Had to manually adjust padding */
+  padding-left: 20%; /*Had to manually adjust padding */
   padding-bottom: 300px;
-  padding-top: 50px;
+  padding-top: 2%;
 }
 
 #containerRemaining {
@@ -22,6 +22,14 @@
   margin: 0 auto;
 }
 
+/* @media screen and (max-width: 1200px) {
+  .card-title{
+    font-size:9px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+} */
 
 
 /*Inspiration for CSS: https://stackoverflow.com/questions/47918195/creating-a-basic-html-javascript-leaderboard 
@@ -32,11 +40,10 @@ https://www.w3schools.com/howto/howto_css_column_cards.asp */
 	width: 100%;
 	height: 40px;
   padding: 50px 10px;
-	border-bottom: 1px solid #AFAFAF;
   text-align: left;
 }
 
-.column {
+.card-deck {
   float: left;
   width: 25%;
   padding: 0 10px;
@@ -46,14 +53,12 @@ https://www.w3schools.com/howto/howto_css_column_cards.asp */
 	position: relative;
 	display: inline-block;
 	width: 25%;
-	line-height: 45px;
 }
 
 .discord {
 	position: relative;
 	display: inline-block;
 	width: 50%;
-	line-height: 45px;
 }
 
 .score {
@@ -78,7 +83,7 @@ h1 {
 }
 
 /* 
-Needs some work
+Trying Responsiveness: Needs some work
 @media screen and (max-width: 300px) {
   .column {
     width: 100%;
@@ -89,4 +94,25 @@ Needs some work
     width: 10%;
     margin-bottom: 20px;
   } 
+} */
+
+
+
+/* If the screen size is 1200px wide or more, set the font-size to 80px
+@media (min-width: 1200px) {
+  .card-title {
+    font-size: 25px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px
+@media (max-width: 800px) {
+  .card-title {
+    font-size: 30px;
+  }
+
+  @media (max-width: 600px) {
+    .card-title {
+      font-size: 10px;
+    }
+  }
 } */
