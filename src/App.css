@@ -1,58 +1,16 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 #largeContainer {
-	/* width: 600px;
-	height: auto;
-  padding: 10px;
-  border: 5px solid rgb(218, 19, 19);
-  border-radius: 25px; */
   margin: 0 auto;
 }
 
 #containerTop3 {
-	width: 600px;
-	height: auto;
-  padding: 10px;
-  border: 5px solid rgb(205, 218, 19);
-  border-radius: 25px;
+  width: 400px;
   margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 300px; /*Had to manually adjust padding */
+  padding-bottom: 300px;
+  padding-top: 50px;
 }
 
 #containerRemaining {
@@ -66,13 +24,22 @@
 
 
 
-/*Source for CSS: https://stackoverflow.com/questions/47918195/creating-a-basic-html-javascript-leaderboard */
+/*Inspiration for CSS: https://stackoverflow.com/questions/47918195/creating-a-basic-html-javascript-leaderboard 
+https://www.w3schools.com/howto/howto_css_column_cards.asp */
 .row {
 	position: relative;
 	display: block;
 	width: 100%;
 	height: 40px;
+  padding: 50px 10px;
 	border-bottom: 1px solid #AFAFAF;
+  text-align: left;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
 }
 
 .index {
@@ -109,3 +76,17 @@ h1 {
   background-size: cover;
   background-image: linear-gradient(to bottom right, rgb(132, 181, 238), rgb(196, 22, 219));
 }
+
+/* 
+Needs some work
+@media screen and (max-width: 300px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .discord {
+    width: 10%;
+    margin-bottom: 20px;
+  } 
+} */
